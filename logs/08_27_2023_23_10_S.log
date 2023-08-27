@@ -1,0 +1,17 @@
+[2023-08-27 23:10:12,428] Line No. 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-08-27 23:10:12,430] Line No. 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-08-27 23:10:12,452] Line No. 187 werkzeug - INFO -  * Restarting with stat
+[2023-08-27 23:10:15,048] Line No. 187 werkzeug - WARNING -  * Debugger is active!
+[2023-08-27 23:10:15,180] Line No. 187 werkzeug - INFO -  * Debugger PIN: 998-371-190
+[2023-08-27 23:10:45,847] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:10:45] "GET / HTTP/1.1" 200 -
+[2023-08-27 23:10:45,906] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:10:45] "GET /static/style.css HTTP/1.1" 200 -
+[2023-08-27 23:11:03,756] Line No. 57 root - INFO - Dataframe Gathered
+[2023-08-27 23:11:03,950] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:11:03] "POST / HTTP/1.1" 200 -
+[2023-08-27 23:11:03,962] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:11:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-08-27 23:11:13,757] Line No. 57 root - INFO - Dataframe Gathered
+[2023-08-27 23:11:13,765] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:11:13] "POST / HTTP/1.1" 200 -
+[2023-08-27 23:11:14,031] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:11:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-08-27 23:11:23,819] Line No. 57 root - INFO - Dataframe Gathered
+[2023-08-27 23:11:23,836] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:11:23] "POST / HTTP/1.1" 200 -
+[2023-08-27 23:11:23,867] Line No. 187 werkzeug - INFO - 127.0.0.1 - - [27/Aug/2023 23:11:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

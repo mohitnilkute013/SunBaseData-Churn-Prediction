@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunBaseData Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Churn Prediction by Mohit Nilkute</h1>
+        <form id="prediction-form" method="POST">
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="text" id="Age" name="Age" placeholder="Enter Age value (float)">
+            </div>
+
+            <div class="form-group">  
+                <label for="Subscription_Length_Months">Subscription_Length_Months:</label>
+                <input type="text" id="Subscription_Length_Months" name="Subscription_Length_Months" placeholder="Enter Subscription_Length_Months value (int)">
+            </div>
+
+            <div class="form-group">  
+                <label for="Monthly_Bill">Monthly_Bill:</label>
+                <input type="text" id="Monthly_Bill" name="Monthly_Bill" placeholder="Enter Monthly_Bill value (int)">
+            </div>
+
+            <div class="form-group">  
+                <label for="Total_Usage_GB">Total_Usage_GB:</label>
+                <input type="text" id="Total_Usage_GB" name="Total_Usage_GB" placeholder="Enter Total_Usage_GB value (int)">
+            </div>
+
+            <div class="form-group" style="display: flex; align-items: center;">
+                <label for="Gender" style=" width: 100px;">Gender:</label>
+                <select id="Gender" name="Gender">
+                    <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group" style="display: flex; align-items: center;">
+                <label for="Location" style=" width: 100px;">Location:</label>
+                <select id="Location" name="Location">
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="New York">New York</option>
+                    <option value="Miami">Miami</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Houston">Houston</option>
+                </select>
+            </div>
+
+            <!-- Add more input fields for other features -->
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result">
+            {% if final_result != None %}
+            <h2>Prediction Result:</h2>
+            <h3 id="prediction-text">{{ final_result }}</h3>
+            {% endif %}
+        </div>
+        
+    </div>
+    <!-- <script src="{{ url_for('static', filename='script.js') }}"></script> -->
+</body>
+</html>

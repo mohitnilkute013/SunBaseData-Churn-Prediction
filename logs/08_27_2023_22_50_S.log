@@ -1,0 +1,67 @@
+[2023-08-27 22:50:10,793] Line No. 24 root - INFO - Data Ingestion started...
+[2023-08-27 22:50:28,007] Line No. 36 root - INFO - Data split into train test... and saving...
+[2023-08-27 22:50:28,344] Line No. 42 root - INFO - Data Ingestion completed.
+[2023-08-27 22:50:28,445] Line No. 69 root - INFO - Read train and test data completed
+[2023-08-27 22:50:28,449] Line No. 70 root - INFO - Train Dataframe Head : 
+   Age  Gender     Location  Subscription_Length_Months  Monthly_Bill  Total_Usage_GB  Churn
+0   45    Male      Houston                          21         31.67             462      1
+1   68  Female  Los Angeles                           6         63.26             230      0
+2   28    Male      Chicago                          22         53.31             427      1
+3   58  Female        Miami                          13         91.08             102      1
+4   56  Female  Los Angeles                          17         53.19             499      1
+[2023-08-27 22:50:28,655] Line No. 71 root - INFO - Test Dataframe Head  : 
+   Age  Gender     Location  Subscription_Length_Months  Monthly_Bill  Total_Usage_GB  Churn
+0   48  Female      Houston                          11         88.48             492      0
+1   49    Male     New York                          13         40.61             423      0
+2   31  Female  Los Angeles                           5         33.01             276      0
+3   53    Male     New York                           4         94.66             339      1
+4   23  Female  Los Angeles                          24         82.21             304      0
+[2023-08-27 22:50:28,660] Line No. 81 root - INFO - Obtaining Preprocessing object...
+[2023-08-27 22:50:28,765] Line No. 88 root - INFO - Preprocessing completed with input training and testing dataset...
+[2023-08-27 22:50:28,770] Line No. 93 root - INFO - Saving Preprocessor file...
+[2023-08-27 22:50:28,773] Line No. 57 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2023-08-27 22:50:28,774] Line No. 40 root - INFO - Training on Logistic Regression
+[2023-08-27 22:50:28,922] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5034242424242424
+[2023-08-27 22:50:28,923] Line No. 40 root - INFO - Training on SGDClassifier
+[2023-08-27 22:50:29,219] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.497
+[2023-08-27 22:50:29,220] Line No. 40 root - INFO - Training on DecisionTreeClassifier
+[2023-08-27 22:50:30,360] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.49936363636363634
+[2023-08-27 22:50:30,360] Line No. 40 root - INFO - Training on SVC linear
+[2023-08-27 22:54:15,355] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5056666666666667
+[2023-08-27 22:54:15,355] Line No. 40 root - INFO - Training on SVC rbf
+[2023-08-27 23:05:45,291] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.503
+[2023-08-27 23:05:45,292] Line No. 40 root - INFO - Training on GaussianNB
+[2023-08-27 23:05:45,506] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5057575757575757
+[2023-08-27 23:05:45,506] Line No. 40 root - INFO - Training on BernoulliNB
+[2023-08-27 23:05:45,796] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5063636363636363
+[2023-08-27 23:05:45,797] Line No. 40 root - INFO - Training on KNNR
+[2023-08-27 23:05:52,789] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.4999090909090909
+[2023-08-27 23:05:52,790] Line No. 40 root - INFO - Training on KMeans
+[2023-08-27 23:05:54,007] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.4978181818181818
+[2023-08-27 23:05:54,007] Line No. 40 root - INFO - Training on RandomForest
+[2023-08-27 23:06:30,590] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5005454545454545
+[2023-08-27 23:06:30,591] Line No. 40 root - INFO - Training on AdaBoost
+[2023-08-27 23:06:34,967] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5023636363636363
+[2023-08-27 23:06:34,968] Line No. 40 root - INFO - Training on Gradient Boosting
+[2023-08-27 23:06:49,848] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.49893939393939396
+[2023-08-27 23:06:49,848] Line No. 40 root - INFO - Training on XGB
+[2023-08-27 23:06:53,164] Line No. 56 root - INFO - Training Complete... Accuracy_Score: 0.5027272727272727
+[2023-08-27 23:06:53,622] Line No. 68 root - INFO - Model Report : 
+                Model_Name  ...                ConfusionMatrix
+0      Logistic Regression  ...   [[9832, 6806], [9581, 6781]]
+1            SGDClassifier  ...   [[7968, 8670], [7929, 8433]]
+2   DecisionTreeClassifier  ...   [[8366, 8272], [8249, 8113]]
+3               SVC linear  ...  [[10179, 6459], [9854, 6508]]
+4                  SVC rbf  ...   [[9336, 7302], [9099, 7263]]
+5               GaussianNB  ...   [[9989, 6649], [9661, 6701]]
+6              BernoulliNB  ...   [[9964, 6674], [9616, 6746]]
+7                     KNNR  ...   [[8368, 8270], [8233, 8129]]
+8                   KMeans  ...   [[8272, 8366], [8206, 8156]]
+9             RandomForest  ...   [[8634, 8004], [8478, 7884]]
+10                AdaBoost  ...   [[8935, 7703], [8719, 7643]]
+11       Gradient Boosting  ...   [[8830, 7808], [8727, 7635]]
+12                     XGB  ...   [[8525, 8113], [8297, 8065]]
+
+[13 rows x 7 columns]
+[2023-08-27 23:06:53,627] Line No. 81 root - INFO - Best Model Found, Model Name : BernoulliNB, Acc Score : 50.63636363636363
+[2023-08-27 23:06:53,629] Line No. 90 root - INFO - Saved Best Model file
